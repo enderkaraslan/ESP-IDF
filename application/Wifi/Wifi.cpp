@@ -2,6 +2,8 @@
 
 namespace WIFI
 {
+std::atomic_bool Wifi::first_call{false};
+
 char Wifi::mac_addr_cstr[]{};
 
 esp_err_t Wifi::_get_mac(void)

@@ -2,6 +2,8 @@
 
 #include "esp_wifi.h"
 #include "esp_mac.h"
+#include <atomic>
+
 
 namespace WIFI
 {
@@ -25,7 +27,13 @@ public:
 
     Wifi(void)
     {
-        if (ESP_OK != _get_mac()) abort();
+
+        if (!first_call)
+        {
+            if (ESP_OK != _get_mac()) esp_restart();
+            first_call = true;
+        }
+        
     }
 
     esp_err_t init(void); // set everything up
@@ -40,6 +48,8 @@ private:
 
     esp_err_t _get_mac(void);
     static char mac_addr_cstr[13];
+
+    static std::atomic_bool first_call;
 
 }; // class WIFI
 
