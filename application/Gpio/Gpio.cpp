@@ -30,7 +30,7 @@ namespace Gpio
 esp_err_t GpioOutput::set(const bool state)
 {
     _state = state;
-
+    
     return gpio_set_level(_pin, 
                             _inverted_logic ? 
                                 !state : 

@@ -5,6 +5,7 @@
 #define pdSECOND pdMS_TO_TICKS(1000)
 
 #include "Gpio.h"
+#include "Wifi.h"
 
 class Main final
 {
@@ -14,4 +15,5 @@ public:
 
     Gpio::GpioOutput led{GPIO_NUM_32};
     Gpio::GpioInput button{GPIO_NUM_33};
+    WIFI::Wifi my_wifi;
 };

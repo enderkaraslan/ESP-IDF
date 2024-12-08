@@ -8,9 +8,14 @@ static Main my_main;
 
 extern "C" void app_main(void)
 {
-    ESP_ERROR_CHECK(my_main.setup());
+    /*ESP_LOGI(LOG_TAG, "Creating default event loop");
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
 
-    esp_log_level_set("*", LOG_LEVEL_LOCAL);
+    ESP_LOGI(LOG_TAG, "Initialising NVS");
+    ESP_ERROR_CHECK(nvs_flash_init());*/
+    
+    ESP_ERROR_CHECK(my_main.setup());
+    
     
     while (true)
     {
@@ -25,6 +30,8 @@ esp_err_t Main::setup(void)
     
     status |= led.init();
     status |= button.init();
+    const char* my_mac = my_wifi.get_mac();
+    ESP_LOGI(LOG_TAG, "Device MAC Address: %s", my_mac);
 
     ESP_LOGI(LOG_TAG, "Status: %d", status);
 

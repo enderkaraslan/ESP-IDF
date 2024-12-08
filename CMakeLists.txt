@@ -6,4 +6,4 @@ set(EXTRA_COMPONENT_DIRS core application)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
-project(LED_BLINK)
+project(FIRST_PROJECT)

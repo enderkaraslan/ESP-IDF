@@ -53,9 +53,9 @@ public:
 
     [[nodiscard]] esp_err_t init(void); 
 
-    esp_err_t set(const bool state); 
-    esp_err_t toggle(void); 
-    bool state(void) { return _state; } 
+    esp_err_t set(const bool state); // Pinin durumunu ayarlar (HIGH veya LOW)
+    esp_err_t toggle(void); // Pinin mevcut durumunu tersine çevirir
+    bool state(void) { return _state; } // LED'in şu anki durumunu döner (true veya false)
 
 }; // GpioOutput
 
