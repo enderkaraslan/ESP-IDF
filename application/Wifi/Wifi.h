@@ -2,8 +2,8 @@
 
 #include "esp_wifi.h"
 #include "esp_mac.h"
-#include <atomic>
-
+//#include <atomic>
+#include <mutex>
 
 namespace WIFI
 {
@@ -28,6 +28,8 @@ public:
     Wifi(void)
     {
 
+        std::lock_guard<std::mutex> guard(first_call_mutx);
+        
         if (!first_call)
         {
             if (ESP_OK != _get_mac()) esp_restart();
@@ -49,7 +51,10 @@ private:
     esp_err_t _get_mac(void);
     static char mac_addr_cstr[13];
 
-    static std::atomic_bool first_call;
+    //static std::atomic_bool first_call;
+    
+    static std::mutex first_call_mutx;
+    static bool first_call;
 
 }; // class WIFI
 

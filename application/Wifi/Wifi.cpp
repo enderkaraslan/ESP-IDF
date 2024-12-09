@@ -2,7 +2,10 @@
 
 namespace WIFI
 {
-std::atomic_bool Wifi::first_call{false};
+//std::atomic_bool Wifi::first_call{false};
+
+std::mutex Wifi::first_call_mutx;
+bool Wifi::first_call{false};
 
 char Wifi::mac_addr_cstr[]{};
 
