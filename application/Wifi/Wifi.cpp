@@ -2,13 +2,33 @@
 
 namespace WIFI
 {
-//std::atomic_bool Wifi::first_call{false};
 
-std::mutex Wifi::first_call_mutx;
-bool Wifi::first_call{false};
+SemaphoreHandle_t Wifi::first_call_mutx{nullptr};
+StaticSemaphore_t Wifi::first_call_mutx_buffer{};
+bool Wifi::first_call{true};
 
 char Wifi::mac_addr_cstr[]{};
 
+Wifi::Wifi(void)
+{
+
+    if (!first_call_mutx) 
+    {
+        first_call_mutx = xSemaphoreCreateMutexStatic(&first_call_mutx_buffer);
+        configASSERT(first_call_mutx);
+        
+    }
+    
+
+    if (first_call && pdPASS == xSemaphoreTake(first_call_mutx, pdSECOND))
+    {
+        if (ESP_OK != _get_mac()) esp_restart();
+        first_call = false;
+        configASSERT(pdPASS == xSemaphoreGive(first_call_mutx));
+
+    }
+    
+}
 esp_err_t Wifi::_get_mac(void)
 {
     uint8_t mac_byte_buffer[6]{};

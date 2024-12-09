@@ -2,8 +2,10 @@
 
 #include "esp_wifi.h"
 #include "esp_mac.h"
-//#include <atomic>
-#include <mutex>
+
+#include "freertos/FreeRTOS.h"
+#include "freertos/semphr.h"
+#define pdSECOND pdMS_TO_TICKS(1000)
 
 namespace WIFI
 {
@@ -25,18 +27,7 @@ public:
         ERROR
     };
 
-    Wifi(void)
-    {
-
-        std::lock_guard<std::mutex> guard(first_call_mutx);
-        
-        if (!first_call)
-        {
-            if (ESP_OK != _get_mac()) esp_restart();
-            first_call = true;
-        }
-        
-    }
+    Wifi(void);
 
     esp_err_t init(void); // set everything up
     esp_err_t begin(void); //start Wifi, connect, etc...
@@ -51,9 +42,8 @@ private:
     esp_err_t _get_mac(void);
     static char mac_addr_cstr[13];
 
-    //static std::atomic_bool first_call;
-    
-    static std::mutex first_call_mutx;
+    static SemaphoreHandle_t first_call_mutx; 
+    static StaticSemaphore_t first_call_mutx_buffer;
     static bool first_call;
 
 }; // class WIFI
