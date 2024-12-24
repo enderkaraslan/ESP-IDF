@@ -1,0 +1,169 @@
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:168 (add_library):
+  The target name "___idf_WİFİ" is reserved or not valid for certain CMake
+  features, such as generator expressions, and may result in undefined
+  behavior.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:258 (__component_add)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:436 (idf_build_component)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:467 (__project_component_dir)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:549 (__project_init)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:19 (set_property):
+  set_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:185 (__component_set_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:258 (__component_add)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:436 (idf_build_component)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:467 (__project_component_dir)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:549 (__project_init)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:23 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:185 (__component_set_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:258 (__component_add)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:436 (idf_build_component)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:467 (__project_component_dir)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:549 (__project_init)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:495 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:549 (__project_init)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:127 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:213 (__component_write_properties)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:129 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:213 (__component_write_properties)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:129 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:213 (__component_write_properties)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:129 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:213 (__component_write_properties)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:129 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:213 (__component_write_properties)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:129 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:213 (__component_write_properties)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:129 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:213 (__component_write_properties)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:129 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:213 (__component_write_properties)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:129 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:213 (__component_write_properties)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:5 (get_property):
+  get_property could not find TARGET ___idf_WİFİ.  Perhaps it has not yet
+  been created.
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:129 (__component_get_property)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:213 (__component_write_properties)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error at C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/component.cmake:251 (message):
+  ERROR: Cannot parse CMake requirements line:
+  __component_set_property(___idf_W¦F¦ REQUIRES "")
+
+  
+
+Call Stack (most recent call first):
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  C:/Users/Ender/esp/v5.3.1/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed
