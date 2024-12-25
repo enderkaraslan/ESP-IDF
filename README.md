@@ -1,60 +1,48 @@
-<<<<<<< HEAD
-| Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C5 | ESP32-C6 | ESP32-H2 | ESP32-P4 | ESP32-S2 | ESP32-S3 |
-| ----------------- | ----- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+# First Project with ESP32
 
-# _Sample project_
+Welcome to your first project with the ESP32! This README will guide you through the setup and basic usage of your ESP32 development board.
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+## Table of Contents
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
 
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
-
-
-
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
-
-## Example folder contents
-
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
-
-```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
-```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
-=======
-# Gpio Library
-
-This repository contains a simple C++ library for handling GPIO operations on embedded systems. The library provides an object-oriented approach for controlling GPIO pins as inputs and outputs using the ESP32 platform.
-
-## Features
-
-- **GPIO Output Control**: Allows setting the state (HIGH/LOW) of GPIO pins and toggling their state.
-- **GPIO Input Handling**: Reads the state of GPIO pins (HIGH/LOW) and allows for basic input operations.
-- **Inverted Logic**: Supports inverted logic for GPIO operations, making it flexible for various hardware configurations.
+## Introduction
+The ESP32 is a powerful, low-cost microcontroller with integrated Wi-Fi and Bluetooth capabilities. This project will help you get started with the basics of using the ESP32.
 
 ## Requirements
+- ESP32 development board
+- USB cable
+- Computer with Arduino IDE installed
+- Internet connection
 
-- ESP32 or compatible microcontroller
-- ESP-IDF (Espressif IoT Development Framework)
-- C++11 or later
+## Setup
+1. **Install Arduino IDE**: Download and install the Arduino IDE from the [official website](https://www.arduino.cc/en/software).
+2. **Install ESP32 Board in Arduino IDE**:
+    - Open Arduino IDE.
+    - Go to `File` > `Preferences`.
+    - In the "Additional Board Manager URLs" field, add the following URL: `https://dl.espressif.com/dl/package_esp32_index.json`.
+    - Go to `Tools` > `Board` > `Boards Manager`.
+    - Search for "ESP32" and click "Install".
+3. **Connect ESP32 to Computer**: Use the USB cable to connect your ESP32 board to your computer.
+4. **Select ESP32 Board**: In Arduino IDE, go to `Tools` > `Board` and select your ESP32 board model.
+5. **Select Port**: Go to `Tools` > `Port` and select the port to which your ESP32 is connected.
 
-## Installation
+## Usage
+1. **Open Example Sketch**: Go to `File` > `Examples` > `WiFi` and select `WiFiScan`.
+2. **Upload Sketch**: Click the upload button to compile and upload the sketch to your ESP32.
+3. **Open Serial Monitor**: Go to `Tools` > `Serial Monitor` to view the output from your ESP32.
 
-1. Clone the repository to your local machine:
+## Troubleshooting
+- **Board Not Detected**: Ensure the USB cable is properly connected and try a different USB port.
+- **Compilation Errors**: Verify that you have selected the correct board and port in the Arduino IDE.
 
-   ```bash
-   git clone https://github.com/your-username/gpio-library.git
->>>>>>> 8bdcc15964fc771d3f9424f95387928eb9075170
+## Contributing
+Contributions are welcome! Please fork this repository and submit a pull request with your improvements.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
