@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "FIRST_PROJECT",
-    "project_version":    "b172092-dirty",
+    "project_version":    "7c81cbe-dirty",
     "project_path":       "C:/Users/Ender/Desktop/ESP32/first_project",
     "idf_path":           "C:/Users/Ender/esp/v5.3.1/esp-idf",
     "build_dir":          "C:/Users/Ender/Desktop/ESP32/first_project/build",
